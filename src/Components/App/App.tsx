@@ -5,7 +5,7 @@ import Home from '../Home/Home';
 
 function App() {
   return (
-    <main className='font-body'>
+    <main className='font-body bg-beige h-screen'>
       <Nav />
       <Routes>
         <Route path='/' element={<Home />} />
