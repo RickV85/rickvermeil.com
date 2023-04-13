@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Nav from '../Nav/Nav';
 import Home from '../Home/Home';
+import Software from '../Software/Software';
 
 function App() {
   return (
@@ -8,8 +9,8 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<Home />} />
-        {/* <Route path='/software' element={<Software />} />
-        <Route path='/resume' element={<Resume />} />
+        <Route path='/software' element={<Software />} />
+        {/* <Route path='/resume' element={<Resume />} />
         <Route path='/videos' element={<Videos />} /> */}
       </Routes>
       {/* <Footer /> */}
