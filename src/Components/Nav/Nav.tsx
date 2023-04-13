@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function Nav() {
+export default function Nav() {
 
   return (
     <nav className="bg-darkBlue w-screen h-18 md:h-24 flex justify-between py-2.5">
@@ -24,14 +24,12 @@ function Nav() {
           </section>
         </NavLink> */}
       </section>
-      <section className="flex items-center">
+      <NavLink to={"/"} className="flex items-center">
         <div>
           <h1 className="text-orange text-center text-base md:text-4xl font-light">Rick Vermeil</h1>
         </div>
         <img className="h-5 mx-[2px] md:h-12 md:mx-3" src="https://img.icons8.com/15616D/ios/100/null/climbing-anchor.png" alt="climbing anchor icon" />
-      </section>
+      </NavLink>
     </nav>
   )
 }
-
-export default Nav;

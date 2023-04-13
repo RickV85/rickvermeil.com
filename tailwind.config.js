@@ -5,7 +5,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'body': ['Bitter']
+      'body': ['Bitter'],
+      'rrlogo': ['Permanent Marker']
     },
     colors: {
       'darkBlue': '#001524',
