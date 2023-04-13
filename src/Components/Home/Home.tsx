@@ -1,3 +1,4 @@
+import React from "react";
 
 function Home() {
   return (
@@ -14,7 +15,7 @@ function Home() {
       </section>
       <section className="flex justify-center h-fit">
         <p className="text-darkBlue font-light leading-loose text-center w-[90vw] py-4">
-          "Welcome to my corner of the internet - where code meets adventure!
+          {`Welcome to my corner of the internet - where code meets adventure!
           I'm a frontend developer who loves to push my limits on the rock face,
           tear up the mountain bike trails, and carve my way down fresh powder
           on my snowboard. When I'm not seeking out the next adrenaline rush,
@@ -23,7 +24,7 @@ function Home() {
           focus and determination required to conquer a challenging climb or
           trail translates seamlessly into the world of web development. So join
           me on this exciting journey as we scale new heights, conquer new
-          challenges, and create amazing things together!"
+          challenges, and create amazing things together!`}
         </p>
       </section>
     </section>
