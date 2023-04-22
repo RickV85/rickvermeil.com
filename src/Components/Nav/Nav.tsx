@@ -29,10 +29,10 @@ export default function Nav({section, setSection}: Props) {
   return (
     <nav className="bg-darkBlue w-screen h-18 md:h-24 flex justify-between py-2.5">
       <section className="flex items-center">
-        <NavLink to={"/software"} >
+        <NavLink to={"/software"}>
           <section className="flex flex-col justify-center md:flex-row items-center p-2 ml-3">
             <img className="w-8 hidden md:flex md:w-12" src="https://img.icons8.com/ios-glyphs/100/15616D/react.png" alt="JavaScript icon" />
-            <h2 id="software" className="text-beige text-sm md:text-base md:ml-2">Software</h2>
+            <h2 id="software" className="text-beige text-sm md:text-base md:ml-2 " >Software</h2>
           </section>
         </NavLink>
         <NavLink to={"/resume"}>
