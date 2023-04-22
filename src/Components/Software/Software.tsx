@@ -1,6 +1,22 @@
+import { useEffect } from "react";
 import { NavLink} from "react-router-dom";
 
-export default function Software() {
+interface Props {
+  section: string;
+  setSection: Function;
+}
+
+export default function Software({section, setSection}: Props) {
+
+  useEffect(() => {
+    setSection('software')
+
+    return () => {
+      setSection('/')
+    }
+    // eslint-disable-next-line
+  }, [])
+
   return (
     <section className="h-fit flex flex-col items-center">
       <section className="bg-teal w-[95vw] max-w-[1200px] rounded-lg h-fit mt-3 p-4 my-8">
@@ -46,11 +62,11 @@ export default function Software() {
             a demonstration.`}
           </p>
         </div>
-        <NavLink to={"https://ride-ready.vercel.app/"} className="flex items-center py-2" target="_blank" rel="noopener noreferrer" >
+        <NavLink to={"https://ride-ready.vercel.app/"} className="flex items-center w-fit py-2" target="_blank" rel="noopener noreferrer" >
         <img src="https://img.icons8.com/ios/50/34F6F2/domain--v1.png" alt="website icon"/>
           <p className="text-beige pl-2">Deployed Link</p>
         </NavLink>
-        <NavLink to={"https://github.com/RickV85/Ride-Ready"} className="flex items-center py-2" target="_blank" rel="noopener noreferrer" >
+        <NavLink to={"https://github.com/RickV85/Ride-Ready"} className="flex items-center w-fit py-2" target="_blank" rel="noopener noreferrer" >
           <img src="https://img.icons8.com/material-outlined/48/34F6F2/github.png" alt="GitHub icon"/>
           <p className="text-beige pl-2">GitHub Repository</p>
         </NavLink>

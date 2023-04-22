@@ -1,17 +1,21 @@
-import React, { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import Nav from '../Nav/Nav';
 import Home from '../Home/Home';
 import Software from '../Software/Software';
+import Resume from '../Resume/Resume';
 
 function App() {
+  const [section, setSection] = useState('/');
+
   return (
     <main className='font-body bg-beige h-fit min-h-screen w-screen'>
-      <Nav />
+      <Nav section={section} setSection={setSection} />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/software' element={<Software />} />
-        {/* <Route path='/resume' element={<Resume />} />
-        <Route path='/videos' element={<Videos />} /> */}
+        <Route path='/' element={<Home section={section} setSection={setSection} />} />
+        <Route path='/software' element={<Software section={section} setSection={setSection} />} />
+        <Route path='/resume' element={<Resume section={section} setSection={setSection} />} />
+        {/* <Route path='/videos' element={<Videos />} /> */}
       </Routes>
       {/* <Footer /> */}
     </main>

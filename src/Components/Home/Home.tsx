@@ -1,6 +1,11 @@
 import React from "react";
 
-function Home() {
+interface Props {
+  section: string;
+  setSection: Function;
+}
+
+function Home({section, setSection}: Props) {
   return (
     <section id="homeMain">
       <section
