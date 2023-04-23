@@ -24,7 +24,7 @@ export default function SoftwareTile({
   if (ytLink) {
     ytIFrame = (
       <iframe
-        className="w-[73vw] px-4 my-6 h-[50vh]"
+        className="w-[95vw] md:w-[90vw] max-w-[1150px] px-4 h-[30vh] md:h-[50vh]"
         src={ytLink}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
@@ -34,18 +34,18 @@ export default function SoftwareTile({
 
   return (
     <section
-      className={`${bgColor} w-[95vw] flex flex-col items-center max-w-[1200px] rounded-lg h-fit mt-3 p-4 my-8`}
+      className={`${bgColor} w-[95vw] flex flex-col items-center max-w-[1200px] rounded-lg h-fit p-4 mt-4`}
     >
       <div className="flex flex-col items-center">
         <h2
-          className={`text-5xl
-        drop-shadow-[4px_4px_5px_#00000075] ${fontStyle}`}
+          className={`text-5xl text-center
+        drop-shadow-[4px_4px_5px_#00000075] mb-4 ${fontStyle}`}
         >
           {appTitle}
         </h2>
         {ytIFrame}
       </div>
-      <div className="w-[71vw]">
+      <div className="w-[90vw] md:w-[87vw] max-w-[1115px]">
         <p className="py-2 text-beige whitespace-pre-line">{description}</p>
         <NavLink
           to={deployedLink}
@@ -56,8 +56,9 @@ export default function SoftwareTile({
           <img
             src="https://img.icons8.com/ios/50/34F6F2/domain--v1.png"
             alt="website icon"
+            className="drop-shadow-[3px_2px_2px_#00000075]"
           />
-          <p className="text-beige pl-2">Deployed Link</p>
+          <p className="text-beige pl-2">Deployed Application</p>
         </NavLink>
         <NavLink
           to={ghLink}
@@ -68,6 +69,7 @@ export default function SoftwareTile({
           <img
             src="https://img.icons8.com/material-outlined/48/34F6F2/github.png"
             alt="GitHub icon"
+            className="drop-shadow-[3px_2px_2px_#00000075]"
           />
           <p className="text-beige pl-2">GitHub Repository</p>
         </NavLink>

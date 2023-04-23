@@ -22,7 +22,7 @@ export default function Software({section, setSection}: Props) {
   })
 
   return (
-    <section className="h-fit flex flex-col items-center">
+    <section className="h-fit flex flex-col items-center pb-4">
       {tiles}
     </section>
   );
