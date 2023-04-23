@@ -18,7 +18,7 @@ export default function Resume({section, setSection}: Props) {
 
   return (
     <section>
-
+      
     </section>
   )
 
