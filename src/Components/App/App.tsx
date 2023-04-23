@@ -4,6 +4,7 @@ import Nav from '../Nav/Nav';
 import Home from '../Home/Home';
 import Software from '../Software/Software';
 import Resume from '../Resume/Resume';
+import Footer from '../Footer/Footer';
 
 function App() {
   const [section, setSection] = useState('/');
@@ -17,7 +18,7 @@ function App() {
         <Route path='/resume' element={<Resume section={section} setSection={setSection} />} />
         {/* <Route path='/videos' element={<Videos />} /> */}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }
