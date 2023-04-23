@@ -12,7 +12,7 @@ function App() {
     <main className='font-body bg-beige h-fit min-h-screen w-screen'>
       <Nav section={section} setSection={setSection} />
       <Routes>
-        <Route path='/' element={<Home section={section} setSection={setSection} />} />
+        <Route path='/' element={<Home />} />
         <Route path='/software' element={<Software section={section} setSection={setSection} />} />
         <Route path='/resume' element={<Resume section={section} setSection={setSection} />} />
         {/* <Route path='/videos' element={<Videos />} /> */}
