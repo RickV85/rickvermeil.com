@@ -18,7 +18,7 @@ export default function Software({section, setSection}: Props) {
   }, [setSection])
 
   const tiles = data.map((tile, i) => {
-    return <SoftwareTile key={i} appTitle={tile.appTitle} bgColor={tile.bgColor} font={tile.font} fontStyle={tile.fontStyle} ytLink={tile.ytLink} description={tile.description} deployedLink={tile.deployedLink} ghLink={tile.ghLink} />
+    return <SoftwareTile key={i} appTitle={tile.appTitle} bgColor={tile.bgColor} fontStyle={tile.fontStyle} ytLink={tile.ytLink} description={tile.description} deployedLink={tile.deployedLink} ghLink={tile.ghLink} />
   })
 
   return (

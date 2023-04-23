@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     fontFamily: {
       'body': ['Bitter'],
-      'rrlogo': ['Permanent Marker']
+      'rrlogo': ['Permanent Marker'],
+      'backcountry': [`'Baloo Chettan 2', cursive`],
     },
     colors: {
       'darkBlue': '#001524',

@@ -3,9 +3,8 @@ import { NavLink } from "react-router-dom";
 export interface Props {
   appTitle: string;
   bgColor: string;
-  font?: string;
   fontStyle?: string;
-  ytLink: string;
+  ytLink?: string;
   description: string;
   deployedLink: string;
   ghLink: string;
@@ -14,26 +13,37 @@ export interface Props {
 export default function SoftwareTile({
   appTitle,
   bgColor,
-  font,
   fontStyle,
   ytLink,
   description,
   deployedLink,
   ghLink,
 }: Props) {
+  let ytIFrame;
+
+  if (ytLink) {
+    ytIFrame = (
+      <iframe
+        className="w-[73vw] px-4 my-6 h-[50vh]"
+        src={ytLink}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+      ></iframe>
+    );
+  }
 
   return (
     <section
       className={`${bgColor} w-[95vw] flex flex-col items-center max-w-[1200px] rounded-lg h-fit mt-3 p-4 my-8`}
     >
       <div className="flex flex-col items-center">
-        <h2 className={`${font} text-5xl ${fontStyle}`}>{appTitle}</h2>
-        <iframe
-          className="w-[73vw] px-4 my-6 h-[50vh]"
-          src={ytLink}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-        ></iframe>
+        <h2
+          className={`text-5xl
+        drop-shadow-[4px_4px_5px_#00000075] ${fontStyle}`}
+        >
+          {appTitle}
+        </h2>
+        {ytIFrame}
       </div>
       <div className="w-[71vw]">
         <p className="py-2 text-beige whitespace-pre-line">{description}</p>
