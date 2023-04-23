@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 
-interface Props {
+export interface Props {
+  appTitle: string;
   bgColor: string;
-  font: string;
-  fontStyle: string;
+  font?: string;
+  fontStyle?: string;
   ytLink: string;
   description: string;
   deployedLink: string;
@@ -11,6 +12,7 @@ interface Props {
 }
 
 export default function SoftwareTile({
+  appTitle,
   bgColor,
   font,
   fontStyle,
@@ -22,10 +24,10 @@ export default function SoftwareTile({
 
   return (
     <section
-      className={`bg-${bgColor} w-[95vw] flex flex-col items-center max-w-[1200px] rounded-lg h-fit mt-3 p-4 my-8`}
+      className={`${bgColor} w-[95vw] flex flex-col items-center max-w-[1200px] rounded-lg h-fit mt-3 p-4 my-8`}
     >
       <div className="flex flex-col items-center">
-        <h2 className={`font-${font} text-5xl ${fontStyle}`}>Ride Ready</h2>
+        <h2 className={`${font} text-5xl ${fontStyle}`}>{appTitle}</h2>
         <iframe
           className="w-[73vw] px-4 my-6 h-[50vh]"
           src={ytLink}
