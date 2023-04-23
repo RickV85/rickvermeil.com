@@ -7,23 +7,33 @@ interface Props {
   setSection: Function;
 }
 
-export default function Software({section, setSection}: Props) {
-
+export default function Software({ section, setSection }: Props) {
   useEffect(() => {
-    setSection('software')
+    setSection("software");
 
     return () => {
-      setSection('/')
-    }
-  }, [setSection])
+      setSection("/");
+    };
+  }, [setSection]);
 
   const tiles = data.map((tile, i) => {
-    return <SoftwareTile key={i} appTitle={tile.appTitle} bgColor={tile.bgColor} fontStyle={tile.fontStyle} ytLink={tile.ytLink} description={tile.description} deployedLink={tile.deployedLink} ghLink={tile.ghLink} />
-  })
+    return (
+      <SoftwareTile
+        key={i}
+        appTitle={tile.appTitle}
+        bgColor={tile.bgColor}
+        titleFontStyle={tile.titleFontStyle}
+        ytLink={tile.ytLink}
+        descFontStyle={tile.descFontStyle}
+        description={tile.description}
+        deployedLink={tile.deployedLink}
+        ghLink={tile.ghLink}
+        linkLogoColor={tile.linkLogoColor}
+      />
+    );
+  });
 
   return (
-    <section className="h-fit flex flex-col items-center pb-4">
-      {tiles}
-    </section>
+    <section className="h-fit flex flex-col items-center pb-4">{tiles}</section>
   );
 }
