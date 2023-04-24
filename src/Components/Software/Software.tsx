@@ -3,11 +3,10 @@ import { data } from "../../SoftwareData";
 import SoftwareTile from "../SoftwareTile/SoftwareTile";
 
 interface Props {
-  section: string;
   setSection: Function;
 }
 
-export default function Software({ section, setSection }: Props) {
+export default function Software({ setSection }: Props) {
   useEffect(() => {
     setSection("software");
 

@@ -14,8 +14,8 @@ function App() {
       <Nav section={section} setSection={setSection} />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/software' element={<Software section={section} setSection={setSection} />} />
-        <Route path='/resume' element={<Resume section={section} setSection={setSection} />} />
+        <Route path='/software' element={<Software setSection={setSection} />} />
+        <Route path='/resume' element={<Resume setSection={setSection} />} />
         {/* <Route path='/videos' element={<Videos />} /> */}
       </Routes>
       <Footer />
