@@ -5,6 +5,7 @@ export interface Props {
   bgColor: string;
   titleFontStyle?: string;
   ytLink?: string;
+  img?: string;
   descFontStyle?: string;
   description: string;
   deployedLink: string;
@@ -17,14 +18,15 @@ export default function SoftwareTile({
   bgColor,
   titleFontStyle,
   ytLink,
+  img,
   descFontStyle,
   description,
   deployedLink,
   ghLink,
   linkLogoColor
 }: Props) {
-  let ytIFrame;
 
+  let ytIFrame;
   if (ytLink) {
     ytIFrame = (
       <iframe
@@ -34,6 +36,13 @@ export default function SoftwareTile({
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
       ></iframe>
     );
+  }
+
+  let image;
+  if (img) {
+    image = (
+      <img className="mb-2" src={img} alt={`${appTitle} app`} />
+    )
   }
 
   return (
@@ -48,6 +57,7 @@ export default function SoftwareTile({
           {appTitle}
         </h2>
         {ytIFrame}
+        {image}
       </div>
       <div className={`w-[90vw] md:w-[87vw] max-w-[1115px] ${descFontStyle}`}>
         <p className='py-2 whitespace-pre-line'>{description}</p>

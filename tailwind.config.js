@@ -8,6 +8,7 @@ module.exports = {
       'body': ['Bitter'],
       'rrlogo': ['Permanent Marker'],
       'backcountry': [`'Baloo Chettan 2', cursive`],
+      'lavlink': ['Dosis,sans-serif'],
     },
     colors: {
       'darkBlue': '#001524',

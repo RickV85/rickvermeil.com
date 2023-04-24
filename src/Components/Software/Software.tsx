@@ -23,6 +23,7 @@ export default function Software({ setSection }: Props) {
         bgColor={tile.bgColor}
         titleFontStyle={tile.titleFontStyle}
         ytLink={tile.ytLink}
+        img={tile.img}
         descFontStyle={tile.descFontStyle}
         description={tile.description}
         deployedLink={tile.deployedLink}
