@@ -9,6 +9,7 @@ module.exports = {
       'rrlogo': ['Permanent Marker'],
       'backcountry': [`'Baloo Chettan 2', cursive`],
       'lavlink': ['Dosis,sans-serif'],
+      'funkyflix': ['Passion One, cursive']
     },
     colors: {
       'darkBlue': '#001524',
