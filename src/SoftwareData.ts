@@ -1,6 +1,7 @@
 export const data = [
   {
     appTitle: "Backcountry Bookings",
+    tech: ["React", "Typescript", "Rails", "Ruby", "Sass", "CSS", "HTML", "Cypress", "Google Maps API", "AWS S3 Bucket", "Git", "GitHub"],
     bgColor: "bg-[#283618]",
     titleFontStyle: "font-backcountry text-[#FBFAF5] font-bold",
     ytLink: "",
@@ -19,6 +20,7 @@ export const data = [
   },
   {
     appTitle: "Ride Ready",
+    tech: ["React", "JavaScript", "Sass", "CSS", "HTML", "Cypress", "Strava OAuth2.0 API", "Git", "GitHub"],
     bgColor: "bg-[#2F4858]",
     titleFontStyle: "font-rrlogo text-[#F6AE2D]",
     ytLink: "https://www.youtube.com/embed/WvRA8F9EQsI",
@@ -37,6 +39,7 @@ export const data = [
   },
   {
     appTitle: "LavLink",
+    tech: ["React", "JavaScript", "Redux", "Sass", "CSS", "HTML", "Cypress", "REST API", "Google Maps API", "Git", "GitHub"],
     bgColor: "bg-[#31c6e0]",
     titleFontStyle: "font-lavlink text-[#034277] font-bold",
     ytLink: "",

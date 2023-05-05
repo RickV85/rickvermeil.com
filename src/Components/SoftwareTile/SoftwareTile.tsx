@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export interface Props {
   appTitle: string;
+  tech: string[];
   bgColor: string;
   titleFontStyle?: string;
   ytLink?: string;
@@ -15,6 +16,7 @@ export interface Props {
 
 export default function SoftwareTile({
   appTitle,
+  tech,
   bgColor,
   titleFontStyle,
   ytLink,
@@ -23,9 +25,8 @@ export default function SoftwareTile({
   description,
   deployedLink,
   ghLink,
-  linkLogoColor
+  linkLogoColor,
 }: Props) {
-
   let ytIFrame;
   if (ytLink) {
     ytIFrame = (
@@ -40,10 +41,16 @@ export default function SoftwareTile({
 
   let image;
   if (img) {
-    image = (
-      <img className="mb-2" src={img} alt={`${appTitle} app`} />
-    )
+    image = <img className="mb-2" src={img} alt={`${appTitle} app`} />;
   }
+
+  let formattedTech = tech.map((str, i) => {
+    if (i < tech.length - 1) {
+      return `${str}, `;
+    } else {
+      return `${str}`;
+    }
+  });
 
   return (
     <section
@@ -60,7 +67,8 @@ export default function SoftwareTile({
         {image}
       </div>
       <div className={`w-[90vw] md:w-[87vw] max-w-[1115px] ${descFontStyle}`}>
-        <p className='py-2 whitespace-pre-line'>{description}</p>
+        <p className="py-2 whitespace-pre-line">{description}</p>
+        <p className="font-bold">Built using: {formattedTech}</p>
         <NavLink
           to={deployedLink}
           className="flex items-center w-fit py-2"

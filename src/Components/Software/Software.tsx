@@ -20,6 +20,7 @@ export default function Software({ setSection }: Props) {
       <SoftwareTile
         key={i}
         appTitle={tile.appTitle}
+        tech={tile.tech}
         bgColor={tile.bgColor}
         titleFontStyle={tile.titleFontStyle}
         ytLink={tile.ytLink}
