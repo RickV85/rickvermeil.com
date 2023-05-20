@@ -17,12 +17,12 @@ export const data = [
     ],
     bgColor: "bg-[#283618]",
     titleFontStyle: "font-backcountry text-[#FBFAF5] font-bold",
-    ytLink: "",
-    img: "https://user-images.githubusercontent.com/113728354/230429531-e0545803-1736-44f5-a3a8-310c09fa4040.gif",
+    ytLink: "https://www.youtube.com/embed/4Q1fa0x7wao",
+    img: "",
     descFontStyle: "font-backcountry text-[#FBFAF5] text-lg",
     description: `Welcome to Backcountry Bookings - your ultimate destination for all your camping needs! Our website is a comprehensive conglomerate of campsite information from around the country, designed to provide campers with an easy-to-navigate and reliable platform for finding the perfect campsite for their outdoor adventures.
 
-    Nominated by peers as one of the best applications built in the quarter to participate in Turing's Demo Comp. This application was built by a full-stack team of seven students for the group's final Capstone project at the Turing School of Software and Design.
+    Awarded first place in Turing's “Demo Comp” by an panel of judges in the software industry. This application was built by a full-stack team of seven students for the group's final Capstone project at the Turing School of Software and Design.
     
     This application is designed to allow a user to research US National Park campgrounds by a variety of options including by state, park name, campground name and their current location. The user is presented with search result options which they can browse and then select one for more information or add to their favorites which will appear on the home page. On the details page for a campground, they will receive vital information about the campground that will help them plan their trip.
 
