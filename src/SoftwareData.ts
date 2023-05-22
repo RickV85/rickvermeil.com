@@ -14,13 +14,14 @@ export const data = [
       "AWS S3 Bucket",
       "Git",
       "GitHub",
+      "GitHub Actions"
     ],
     bgColor: "bg-[#283618]",
     titleFontStyle: "font-backcountry text-[#FBFAF5] font-bold",
     ytLink: "https://www.youtube.com/embed/4Q1fa0x7wao",
     img: "",
     descFontStyle: "font-backcountry text-[#FBFAF5] text-lg",
-    description: `Welcome to Backcountry Bookings - your ultimate destination for all your camping needs! Our website is a comprehensive conglomerate of campsite information from around the country, designed to provide campers with an easy-to-navigate and reliable platform for finding the perfect campsite for their outdoor adventures.
+    description: `Backcountry Bookings is the ultimate destination for all of your camping needs! It's a comprehensive research and review platform with National Park campground information from around the country, designed to help you find the perfect campsite for your next adventure.
 
     Awarded first place in Turing's “Demo Comp” by an panel of judges in the software industry. This application was built by a full-stack team of seven students for the group's final Capstone project at the Turing School of Software and Design.
     
@@ -42,7 +43,7 @@ export const data = [
       "Cypress",
       "Strava OAuth2.0 API",
       "Git",
-      "GitHub",
+      "GitHub"
     ],
     bgColor: "bg-[#2F4858]",
     titleFontStyle: "font-rrlogo text-[#F6AE2D]",
