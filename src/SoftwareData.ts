@@ -23,7 +23,7 @@ export const data = [
     descFontStyle: "font-backcountry text-[#FBFAF5] text-lg",
     description: `Backcountry Bookings is the ultimate destination for all of your camping needs! It's a comprehensive research and review platform with National Park campground information from around the country, designed to help you find the perfect campsite for your next adventure.
 
-    Awarded first place in Turing's “Demo Comp” by an panel of judges in the software industry. This application was built by a full-stack team of seven students for the group's final Capstone project at the Turing School of Software and Design.
+    Awarded first place in Turing's “Demo Comp” by a panel of judges in the software industry. This application was built by a full-stack team of seven students for the group's final Capstone project at the Turing School of Software and Design.
     
     This application is designed to allow a user to research US National Park campgrounds by a variety of options including by state, park name, campground name and their current location. The user is presented with search result options which they can browse and then select one for more information or add to their favorites which will appear on the home page. On the details page for a campground, they will receive vital information about the campground that will help them plan their trip.
 
