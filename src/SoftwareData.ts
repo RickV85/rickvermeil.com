@@ -1,5 +1,39 @@
 export const data = [
   {
+    appTitle: "Ride Ready",
+    tech: [
+      "React",
+      "JavaScript",
+      "Sass",
+      "CSS",
+      "HTML",
+      "Cypress",
+      "Strava OAuth2.0 API",
+      "Node.js",
+      "Express",
+      "SQL",
+      "Git",
+      "GitHub"
+    ],
+    bgColor: "bg-[#2F4858]",
+    titleFontStyle: "font-rrlogo text-[#F6AE2D]",
+    ytLink: "https://www.youtube.com/embed/WvRA8F9EQsI",
+    img: "",
+    descFontStyle: "text-[#F6AE2D] text-lg",
+    description: `This app was inspired by an idea that I had while I was rebuilding my mountain bike suspension. I realized that it was not only difficult to remember the last time I serviced my suspension, but it was extremely difficult to accurately determine how many hours I had ridden the bike since that date which is how suspension manufacturers prescribe their recommended service intervals.
+    
+    I set out to create an app that addresses this problem that is common to all mountain bikers that also meets the requirements of Turing's School of Software and Design's 3rd quarter final project. This project had a tight timeline of 6 days so I had to work very hard to complete this app, learning new tech like OAuth2.0 in the process.
+    
+    This project marked a watershed moment for me. Only a year ago, I could have never imagined I could build a complex application that solves a real world problem from design to deployment in 6 days on my own. After this project, I feel that given the time and resources, I could build almost anything. I feel that this app could be very useful not only for my own use and for learning new skills by adding features, but for any given mountain biker like myself.
+
+    Recently, while searching for my first role as a developer, I have created a fully functional backend to store a user's suspension information, eliminating the need to store that data in a user's local storage as the original version had. I learned so much about building an API with full CRUD functionality using Node.js, Express and SQL. I am starting an LLC for this app and plan to continue this labor of love by adding functionality while looking for ways to monetize it.
+    
+    Please note that this application requires a user to have a Strava account and use it to track mountain bike rides for it to operate correctly. For those that are not mountain bikers, please enjoy the video above and reach out to me for a demonstration.`,
+    linkLogoColor: "F26419",
+    deployedLink: "https://www.ridereadybike.com",
+    ghLink: "https://github.com/orgs/RideReady/repositories",
+  },
+  {
     appTitle: "Backcountry Bookings",
     tech: [
       "React",
@@ -31,35 +65,6 @@ export const data = [
     linkLogoColor: "F9A03F",
     deployedLink: "https://backcountrybookings.herokuapp.com/",
     ghLink: "https://github.com/Backcountry-Bookings/backcountry_fe",
-  },
-  {
-    appTitle: "Ride Ready",
-    tech: [
-      "React",
-      "JavaScript",
-      "Sass",
-      "CSS",
-      "HTML",
-      "Cypress",
-      "Strava OAuth2.0 API",
-      "Git",
-      "GitHub"
-    ],
-    bgColor: "bg-[#2F4858]",
-    titleFontStyle: "font-rrlogo text-[#F6AE2D]",
-    ytLink: "https://www.youtube.com/embed/WvRA8F9EQsI",
-    img: "",
-    descFontStyle: "text-[#F6AE2D] text-lg",
-    description: `This app was inspired by an idea that I had while I was rebuilding my mountain bike suspension. I realized that it was not only difficult to keep track of the last time I serviced my suspension, but it was extremely difficult to accurately determine how many hours I had ridden the bike since that date which is how suspension manufacturers prescribe their recommended service intervals.
-    
-    I set out to create an app that addresses this problem that is common to all mountain bikers that also meets the requirements of Turing's School of Software and Design Mod 3 (3rd quarter) final project. This project had a tight timeline of 6 days so I had to work very hard to complete this app, learning new tech like OAuth2.0 in the process.
-    
-    This project marks a watershed moment for me. Only a year ago, I could have never imagined I could build a complex application that solves a real world problem from design to deployment in 6 days on my own. After this project, I feel that given the time and resources, I could build absolutely anything I want to.
-    
-    Please note that this application requires a user to have a Strava account and use it to track mountain bike rides for it to operate correctly. For those that are not mountain bikers, please enjoy the video above and reach out to me for a demonstration.`,
-    linkLogoColor: "F26419",
-    deployedLink: "https://ride-ready.vercel.app/",
-    ghLink: "https://github.com/RickV85/Ride-Ready",
   },
   {
     appTitle: "LavLink",
