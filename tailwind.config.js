@@ -19,11 +19,10 @@ module.exports = {
       'aqua': '#34F6F2'
     },
     screens: {
-      'sm': '640px',
-      'md': '985px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
+      'sm': '450px',
+      'md': '700px',
+      'lg': '1180px',
+      'xl': '1600px',
     },
     extend: {},
   },
