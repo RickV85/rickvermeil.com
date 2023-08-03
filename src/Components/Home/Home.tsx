@@ -2,40 +2,40 @@ import { useEffect, useState } from "react";
 import profile from "../../assets/profile pic.jpeg";
 
 function Home() {
-  const heroImageUrls = [
-    "url(/assets/Shelf-81.jpeg)",
-    "url(/assets/IMG_7467_1.jpeg)",
-  ];
-  const [currentHeroImgUrl, setCurrentHeroImgUrl] = useState(
-    heroImageUrls[0]
-  );
+  const heroImageUrls = ["/assets/Shelf-81.jpeg", "/assets/IMG_7467_1.jpeg"];
   const [heroImgIndex, setHeroImgIndex] = useState(0);
 
   useEffect(() => {
     const heroImgTimer = setInterval(() => {
-      if (heroImgIndex < heroImageUrls.length - 1) {
-        setHeroImgIndex(heroImgIndex + 1);
-        setCurrentHeroImgUrl(heroImageUrls[heroImgIndex + 1]);
-      } else {
-        setHeroImgIndex(0);
-        setCurrentHeroImgUrl(heroImageUrls[0]);
-      }
+      setHeroImgIndex((heroImgIndex + 1) % heroImageUrls.length);
     }, 5000);
     return () => {
       clearInterval(heroImgTimer);
     };
-    // eslint-disable-next-line
   }, [heroImgIndex]);
 
   return (
     <section id="homeMain">
-      <section
-        className="flex items-center justify-center h-[30vh] sm:h-[44vh] md:h-[60vh] lg:h-[90vh] w-screen xl:w-[1400px] xl:m-auto bg-cover bg-center "
-        style={{ backgroundImage: currentHeroImgUrl }}
-      >
+      <section className="relative flex items-center justify-center h-[30vh] sm:h-[44vh] md:h-[60vh] lg:h-[90vh] w-screen xl:w-[1600px] xl:m-auto">
+        <div
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+            heroImgIndex === 0 ? "opacity-100" : "opacity-0"
+          }`}
+          style={{ backgroundImage: `url(${heroImageUrls[0]})` }}
+        ></div>
+        <div
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+            heroImgIndex === 1 ? "opacity-100" : "opacity-0"
+          }`}
+          style={{ backgroundImage: `url(${heroImageUrls[1]})` }}
+        ></div>
         <div className="w-[225px] sm:w-[330px] md:w-[550px] -translate-x-16 sm:-translate-x-20 md:-translate-x-36 lg:-translate-x-64">
           <h3 className=" text-[1rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[3rem] sm:leading-[30px] md:leading-[40px] lg:leading-[60px]  font-semibold text-aqua  text-center  [text-shadow:_2px_2px_10px_#001524]">
-            Frontend Developer,<br/>passionate adventurer,<br/>driven by challenge
+            Frontend Developer,
+            <br />
+            passionate adventurer,
+            <br />
+            driven by challenge
           </h3>
         </div>
       </section>
