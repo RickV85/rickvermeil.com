@@ -4,10 +4,10 @@ import profile from "../../assets/profile pic.jpeg";
 function Home() {
   const heroImageUrls = [
     "url(/assets/Shelf-81.jpeg)",
-    "url(/assets/IMG_7467.jpeg)",
+    "url(/assets/IMG_7467_1.jpeg)",
   ];
   const [currentHeroImgUrl, setCurrentHeroImgUrl] = useState(
-    "url(/assets/Shelf-81.jpeg)"
+    heroImageUrls[0]
   );
   const [heroImgIndex, setHeroImgIndex] = useState(0);
 
@@ -30,12 +30,12 @@ function Home() {
   return (
     <section id="homeMain">
       <section
-        className="flex items-center justify-center h-[71vmin] w-screen bg-cover bg-right md:bg-center"
+        className="flex items-center justify-center h-[30vh] sm:h-[44vh] md:h-[60vh] lg:h-[90vh] w-screen xl:w-[1400px] xl:m-auto bg-cover bg-center "
         style={{ backgroundImage: currentHeroImgUrl }}
       >
-        <div className="w-[225px] sm:w-[330px] md:w-[400px] -translate-x-20 sm:-translate-x-36 md:-translate-x-64">
-          <h3 className=" text-lg sm:text-2xl md:text-4xl font-semibold text-aqua  text-center md:leading-[60px] [text-shadow:_2px_2px_10px_#001524]">
-            Frontend Developer, passionate adventurer, driven by challenge
+        <div className="w-[225px] sm:w-[330px] md:w-[550px] -translate-x-16 sm:-translate-x-20 md:-translate-x-36 lg:-translate-x-64">
+          <h3 className=" text-[1rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[3rem] sm:leading-[30px] md:leading-[40px] lg:leading-[60px]  font-semibold text-aqua  text-center  [text-shadow:_2px_2px_10px_#001524]">
+            Frontend Developer,<br/>passionate adventurer,<br/>driven by challenge
           </h3>
         </div>
       </section>
