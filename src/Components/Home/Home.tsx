@@ -38,7 +38,7 @@ function Home() {
             driven by challenge
           </h3>
           <div className=" w-full flex flex-col items-center p-4 ">
-            <button className="w-36 lg:w-[16vw] lg:max-w-[250px] h-fit bg-teal/80 outline outline-1 outline-orange rounded-md text-aqua [text-shadow:_2px_2px_5px_#000000] text-sm font-semibold lg:text-lg p-2 " onClick={() => navigate("/software")}>Checkout my apps!</button>
+            <button className="w-fit lg:w-[16vw] lg:max-w-[250px] h-fit bg-teal/90 outline outline-1 outline-orange rounded-md text-aqua [text-shadow:_2px_2px_5px_#000000] text-xs sm:text-base lg:text-lg font-semibold p-2 " onClick={() => navigate("/software")}>Checkout my apps!</button>
           </div>
         </div>
       </section>
