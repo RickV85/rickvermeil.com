@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import profile from "../../assets/profile pic.jpeg";
 import HeroImage from "../HeroImage/HeroImage";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const heroImageUrls = ["/assets/Shelf-81.jpeg", "/assets/IMG_7467_1.jpeg"];
   const [heroImgIndex, setHeroImgIndex] = useState(0);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const heroImgTimer = setInterval(() => {
@@ -27,13 +30,16 @@ function Home() {
         />
         ))}
         <div className="w-[225px] sm:w-[330px] md:w-[550px] -translate-x-16 sm:-translate-x-20 md:-translate-x-36 lg:-translate-x-64">
-          <h3 className=" text-[1rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[3rem] sm:leading-[30px] md:leading-[40px] lg:leading-[60px]  font-semibold text-aqua  text-center  [text-shadow:_2px_2px_10px_#001524]">
+          <h3 className=" text-[1rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[3rem] sm:leading-[30px] md:leading-[40px] lg:leading-[60px]  font-semibold text-aqua  text-center [text-shadow:_2px_2px_5px_#000000] ">
             Frontend Developer,
             <br />
             passionate adventurer,
             <br />
             driven by challenge
           </h3>
+          <div className=" w-full flex flex-col items-center p-4 ">
+            <button className="w-36 lg:w-[16vw] lg:max-w-[250px] h-fit bg-teal/80 outline outline-1 outline-orange rounded-md text-aqua [text-shadow:_2px_2px_5px_#000000] text-sm font-semibold lg:text-lg p-2 " onClick={() => navigate("/software")}>Checkout my apps!</button>
+          </div>
         </div>
       </section>
       <section className="flex flex-col items-center h-fit">
