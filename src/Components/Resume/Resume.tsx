@@ -15,7 +15,7 @@ export default function Resume({ setSection }: Props) {
   }, []);
 
   return (
-    <section className=" flex flex-col items-center h-[100vh] ">
+    <section className=" flex flex-col items-center h-[82vh] sm:h-[90vh] md:h-[105vh] ">
       <iframe
         src="/assets/Rick Vermeil Resume.pdf"
         width="100%"
