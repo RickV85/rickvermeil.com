@@ -15,14 +15,20 @@ export default function Resume({ setSection }: Props) {
   }, []);
 
   return (
-    <section>
+    <section className=" flex flex-col items-center h-[100vh] ">
       <iframe
-        className="h-[81vh] md:h-[100vh] w-screen"
-        title="resume"
-        src={
-          "https://docs.google.com/document/d/1ZF0BCMgEvImzQhZcKlD6YKUcPZUZoHBN/edit?usp=sharing&ouid=101000928729222042760&rtpof=true&sd=true"
-        }
-      />
+        src="/assets/Rick Vermeil Resume.pdf"
+        width="100%"
+        height="100%"
+        title="Rick Vermeil Resume 8.14.23"
+      >
+        Your browser does not support PDFs. Please download my resume by clicking the button below.
+      </iframe>
+      <button className=" h-fit w-fit bg-teal py-2 px-6 m-6 rounded-md ">
+        <a href={"/assets/Rick Vermeil Resume.pdf"} download style={{ textDecoration: 'none', color: 'inherit' }}>
+          Download Resume
+        </a>
+      </button>
     </section>
   );
 }
