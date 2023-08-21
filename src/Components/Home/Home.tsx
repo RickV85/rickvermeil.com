@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import profile from "../../assets/profile pic.jpeg";
+import profile from "../../assets/profile pic.webp";
 import HeroImage from "../HeroImage/HeroImage";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const heroImageUrls = ["/assets/Shelf-81.jpeg", "/assets/IMG_7467_1.jpeg"];
+  const heroImageUrls = ["/assets/Shelf-81.webp", "/assets/IMG_7467_1.webp"];
   const [heroImgIndex, setHeroImgIndex] = useState(0);
 
   const navigate = useNavigate();
@@ -50,7 +50,7 @@ function Home() {
           <img
             className="h-72 m-6 md:h-96 md:m-8 rounded-md"
             src={profile}
-            alt="Rick Vermeil profile"
+            alt="Rick Vermeil head shot"
           />
           <div className="text-beige whitespace-pre-line ">
             <p className="p-6 ">{`I'm a former marketing professional, with extensive experience in Project Management, Event Marketing, Web Content Management and Product Ownership, eager to transition to a Frontend Software Developer role. While my background is in marketing, I recently completed and truly enjoyed learning client-side development in the Turing School of Software and Design. This experience has given me the skills, knowledge and tenacity that I need to help me make this change.
