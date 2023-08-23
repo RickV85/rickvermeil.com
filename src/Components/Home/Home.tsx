@@ -4,7 +4,7 @@ import HeroImage from "../HeroImage/HeroImage";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const heroImageUrls = ["/assets/Shelf-81.webp", "/assets/IMG_7467_1.webp"];
+  const heroImageUrls = ["/assets/Shelf-81.webp","/assets/DSC_0232.webp", "/assets/Cropped_Keystone_Enduro_EvenFlow.webp"];
   const [heroImgIndex, setHeroImgIndex] = useState(0);
 
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ function Home() {
   useEffect(() => {
     const heroImgTimer = setInterval(() => {
       setHeroImgIndex((heroImgIndex + 1) % heroImageUrls.length);
-    }, 5000);
+    }, 6000);
     return () => {
       clearInterval(heroImgTimer);
     };
