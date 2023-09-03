@@ -53,15 +53,13 @@ function Home() {
             alt="Rick Vermeil head shot"
           />
           <div className="text-beige whitespace-pre-line ">
-            <p className="p-6 ">{`I'm a former marketing professional, with extensive experience in Project Management, Event Marketing, Web Content Management and Product Ownership, eager to transition to a Frontend Software Developer role. While my background is in marketing, I recently completed and truly enjoyed learning client-side development in the Turing School of Software and Design. This experience has given me the skills, knowledge and tenacity that I need to help me make this change.
+            <p className="p-6 ">{`I'm a former marketing professional, with extensive experience in Project Management, Event Marketing, Web Content Management and Product Ownership, eager to transition to a Software Engineer role. While my background is in marketing, I recently attended the Turing School of Software and Design, successfully completing their frontend development program. This experience has given me the skills, knowledge and tenacity that I need to help me make this change.
 
             My expertise in modern Frontend languages and frameworks include proficiencies in React, JavaScript ES6, TypeScript, Sass, CSS3, HTML5, and testing with Cypress, Mocha/Chai and Jest but I am also always learning new tech. At the moment, I am learning Tailwind (which this website is styled with), Next.js and Node.js. UI/UX design, user-friendly error handling, responsive layouts, accessibility, Agile methodologies, and test-driven development are all important practices that I employ when creating applications.
 
             One of my proudest accomplishments is the creation of "Backcountry Bookings", an application that was nominated by my peers to compete in Turing's "Demo Comp" against other outstanding student projects. It was an amazing experience to see our design come to life with the help of a full-stack team and receive recognition from my peers.
 
-            As a developer, I'm highly collaborative and methodical, and I value producing quality, readable code. My  marketing experience has given me a unique perspective on user empathy, and I'm always thinking about how to create the best possible experience for my users. I'm equally comfortable coding alone or in pairs and I find it rewarding to assist others around me.
-
-            I'm excited about the prospect of collaborating with a team that takes a democratic approach to decision-making. My team's best interests always take precedence over my own code and I enjoy learning from others' solutions to the problem at hand. I prioritize recognizing those around me for their contributions to our team's shared success, even if those may seem insignificant to others.
+            As a developer, I'm highly collaborative, methodical, and I value producing quality, readable code. My  marketing experience has given me a unique perspective on user empathy, and I'm always thinking about how to create the best possible experience for my users.
 
             Thank you for taking the time to learn more about me, and I hope to have the opportunity to work with you soon. Please click the link below if you'd like to get in touch.`}</p>
           </div>
