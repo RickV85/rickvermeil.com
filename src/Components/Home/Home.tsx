@@ -44,7 +44,7 @@ function Home() {
       </section>
       <section className="flex flex-col items-center h-fit">
         <p className="text-darkBlue font-light leading-loose whitespace-pre-line text-center w-[90vw] py-4">
-          {`Hello and welcome! I love pushing my limits on a rock face, down a mountain bike trail and in software development. When I'm not pursuing one of my passions in the outdoors, you'll find me designing and brining user-centric web applications to life. I believe that the same focus and determination required to conquer a challenging climb or trail translates seamlessly into the world of software development. Join me on this journey as we take on new challenges and create amazing things together!`}
+          {`Hello and welcome! When I'm not pursuing one of my passions in the outdoors, you'll find me designing and brining user-centric web applications to life. I love to push my limits on a rock face, down a mountain bike trail and in software development. I believe that the same focus and determination required to conquer a challenging climb or trail translates seamlessly into the world of software development.`}
         </p>
         <div className="bg-teal h-fit w-screen flex flex-col-reverse md:flex-row items-center ">
           <img
