@@ -20,7 +20,7 @@ export default function Resume({ setSection }: Props) {
         src="/assets/Rick Vermeil Resume.pdf"
         width="100%"
         height="100%"
-        title="Rick Vermeil Resume 8.14.23"
+        title="Rick Vermeil Resume 10.19.23"
       >
         Your browser does not support PDFs. Please download my resume by clicking the button below.
       </iframe>
