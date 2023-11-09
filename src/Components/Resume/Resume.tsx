@@ -18,9 +18,10 @@ export default function Resume({ setSection }: Props) {
     <section className=" flex flex-col items-center h-[82vh] sm:h-[90vh] md:h-[105vh] ">
       <iframe
         src="/assets/Rick Vermeil Resume.pdf"
+        datatype="pdf"
         width="100%"
         height="100%"
-        title="Rick Vermeil Resume 10.30.23"
+        title="Rick Vermeil Resume 11.9.23"
       >
         Your browser does not support PDFs. Please download my resume by clicking the button below.
       </iframe>
